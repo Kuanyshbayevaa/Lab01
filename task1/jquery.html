@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>jQuery Toggle Highlight</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .highlight {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="btn">Toggle Highlight</button>
+    <p id="text">This is a paragraph</p>
+
+    <script>
+        $("#btn").click(function() {
+            $("#text").toggleClass("highlight");
+        });
+    </script>
+
+</body>
+</html>
